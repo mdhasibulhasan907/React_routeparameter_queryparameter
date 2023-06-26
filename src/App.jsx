@@ -6,6 +6,7 @@ import Blog from './pages/Blog'
 import Navbar from './components/Navbar';
 
 import Teacher from './pages/Teacher';
+import User from './pages/User';
 
 import './App.css';
 
@@ -24,6 +25,9 @@ const  App=()=> {
    
               {/* Route parameter */}
               <Route path='/Teacher/:id' element={<Teacher/>}/>
+
+              {/* Query parameter */}
+              <Route path='/User' element={<User/>}/>
 
         </Routes>
     
