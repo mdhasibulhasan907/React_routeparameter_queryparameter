@@ -5,6 +5,8 @@ import Blogs from './pages/Blogs';
 import Blog from './pages/Blog'
 import Navbar from './components/Navbar';
 
+import Teacher from './pages/Teacher';
+
 import './App.css';
 
 
@@ -19,6 +21,9 @@ const  App=()=> {
               <Route path='/contact' element={<Contact/>}/>
               <Route path='/blogs' element={<Blogs/>}/>
               <Route path='/blogs/:title' element={<Blog/>}/>
+   
+              {/* Route parameter */}
+              <Route path='/Teacher/:id' element={<Teacher/>}/>
 
         </Routes>
     
